@@ -1,17 +1,19 @@
-.hairline (@with;@height;@rad-lt;@rad-lb;@trans){
+.hairline (@with;@height;@rad-lt;@rad-lb;@top;@left;@trans){
     border-left: 3px solid #000;
     width: @with;
     height: @height;
     border-radius: @rad-lt 0% 0% @rad-lb;
     position: absolute;
+    top:@top;
+    left:@left;
     transform: rotate(@trans); 
 }
 
 .hairline1{
-     .hairline (200px;200px;10%;350%;0deg)
+     .hairline (200px;200px;10%;350%;0;100px;0deg)
  }
 
 .hairline2{
-    .hairline (200px;200px;10%;350%;90deg)
+    .hairline (200px;200px;10%;350%;0;0;90deg)
 }
 /*==========================*/
