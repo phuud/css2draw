@@ -1,0 +1,17 @@
+.hairline (@with;@height;@rad-lt;@rad-lb;@trans){
+    border-left: 5px solid #000;
+    width: @with;
+    height: @height;
+    border-radius: @rad-lt 0% 0% @rad-lb;
+    position: absolute;
+    transform: rotate(@trans); 
+}
+
+.hairline1{
+     .hairline (200px;200px;10%;350%;0deg)
+ }
+
+.hairline2{
+    .hairline (200px;200px;10%;350%;90deg)
+}
+/*==========================*/
