@@ -1,0 +1,9 @@
+.image-box {
+    position: absolute;
+    overflow: hidden;
+    display: block;
+    width: 600px;
+    height: 600px;
+    opacity: 0.3;
+    background: url('../images/Renge.jpg') no-repeat;
+}
