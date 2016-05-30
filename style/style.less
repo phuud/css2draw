@@ -1,19 +1,19 @@
-.hairline (@with;@height;@rad-lt;@rad-lb;@top;@left;@trans){
-    border-left: 3px solid #000;
+.hairline (@with;@height;@rad-lt;@rad-lb;@top;@left;@trans1;@trans2){
+    border-top: 3px solid #000;
     width: @with;
     height: @height;
     border-radius: @rad-lt 0% 0% @rad-lb;
     position: absolute;
     top:@top;
     left:@left;
-    transform: rotate(@trans); 
+    transform: skew(@trans1,@trans2);
 }
 
 .hairline1{
-     .hairline (200px;200px;10%;350%;0;100px;0deg)
+     .hairline (200px;180px;100%;0%;141px;133px;2deg;-9deg)
  }
 
 .hairline2{
-    .hairline (200px;200px;10%;350%;0;0;90deg)
+    .hairline (200px;200px;10%;350%;0;0;90deg;-9deg)
 }
 /*==========================*/
