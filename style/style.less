@@ -1,16 +1,17 @@
-.hairline (@line;@with;@height;@rad-lt;@rad-lb;@top;@left;@trans1;@trans2;@trans3){
+.line (@line;@with;@height;@top;@left;@trans1;@trans2;@trans3:0){
     border-top: @line solid #000;
     width: @with;
     height: @height;
-    border-radius: @rad-lt 0% 0% @rad-lb;
+    border-radius: 100% 0% 0% 0%;
     position: absolute;
     top:@top;
     left:@left;
     transform: skew(@trans1,@trans2) rotate(@trans3);
 }
 
-.hairline1{.hairline (3px;200px;180px;100%;0%;141px;133px;2deg;-9deg;0)}
-.hairline2{.hairline (3px;33px;50px;100%;0%;266px;137px;-10deg;-36deg;-8deg)}
-.hairline3{.hairline (2px;120px;169px;100%;0%;231px;133px;4deg;-29deg;-25deg)}
-.hairline4{.hairline (2px;14px;30px;100%;0%;364px;163px;2deg;-57deg;-13deg)}
+.line_1{.line (3px;200px;180px;141px;133px;2deg;-9deg)}
+.line_2{.line (3px;33px;50px;266px;137px;-10deg;-36deg;-8deg)}
+.line_3{.line (2px;120px;169px;231px;133px;4deg;-29deg;-25deg)}
+.line_4{.line (2px;14px;30px;364px;163px;2deg;-57deg;-13deg)}
+.line_5{.line (2px;75px;28px;369px;155px;32deg;24deg;-65deg)}
 /*==========================*/

@@ -1,3 +1,6 @@
 console.log('This would be the main JS file.');
 
-/*$('.hairline1').css('width',"300");*/
+var lines = document.getElementById("lines");
+for(var i=1; i<6; i++) {
+    lines.innerHTML += "<span class='line_"+i+"'></span>";
+}
